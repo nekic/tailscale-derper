@@ -25,7 +25,8 @@ subjectAltName = @alt_names
 subjectAltName = @alt_names
 
 [alt_names]
-IP.1 = $CERT_HOST
+# IP.1 = $CERT_HOST
+DNS.1 = $CERT_HOST
 " > "$CONF_FILE"
 
 mkdir -p "$CERT_DIR"
